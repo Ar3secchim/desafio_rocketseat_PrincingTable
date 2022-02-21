@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+
+}
+:root {
+  --yellow: #ffcc29;
+  --blue: #1d539e;
+  --gray: #828799;
+  --page-background: #f9fbfc;
+}
+
+body {
+  background-color: var(--page-background);
+  font-family: Open Sans, sans-serif;
+}
+
+h1{
+  font: normal 700 3rem "Open Sans";
+}
+
+h3{
+  font: normal 400 1.4rem "Open Sans";
+}
+
+ul{
+  list-style-type: none;
+}
+main{
+  display: flex;
+  gap: 3rem;
+  justify-content:center;
+  margin: -6rem;
+}
+footer{
+  height:150px;
+}
+/* ----------------container card -----------------------*/
+.container_card {
+  display: flex;
+  width: 355px;
+  height: 470px;
+  padding:1.9rem;
+
+  border-radius: .5rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.131));
+  background:white;
+
+}
+
+/* ----------------card header------------------------*/
+.container_header {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding-bottom:10rem;
+
+  color: white;
+  background:var(--blue);
+}
+
+.container_header_text {
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  width: 553px;
+  gap: 2rem;
+  margin-top: 6rem;
+}
+
+
+
+
