@@ -1,10 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 *{
   box-sizing: border-box;
-  margin: 0;
-
+  margin: 0; 
 }
+
 :root {
   --yellow: #ffcc29;
   --blue: #1d539e;
@@ -21,8 +22,18 @@ h1{
   font: normal 700 3rem "Open Sans";
 }
 
-h3{
+h2{
   font: normal 400 1.4rem "Open Sans";
+}
+
+h3{
+  font: normal 600 1rem "Open Sans";
+  color: rgba(30, 35, 56, 1);
+}
+
+h4{
+  font: normal 400 14px "Open Sans";
+  color: rgba(130, 135, 153, 1);
 }
 
 ul{
@@ -36,18 +47,6 @@ main{
 }
 footer{
   height:150px;
-}
-/* ----------------container card -----------------------*/
-.container_card {
-  display: flex;
-  width: 355px;
-  height: 470px;
-  padding:1.9rem;
-
-  border-radius: .5rem;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.131));
-  background:white;
-
 }
 
 /* ----------------card header------------------------*/
@@ -69,7 +68,153 @@ footer{
   gap: 2rem;
   margin-top: 6rem;
 }
+/* --------------container card -----------------------*/
+.container_card {
+  display: flex;
+  width: 355px;
+  height: 470px;
 
+  border-radius: .5rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.131));
+  background:white;
 
+}
 
+/*------------------- Cards global---------------------*/
+.category{
+  height: 25px;
+  margin-bottom: 1.6rem;
+}
 
+.container_price{
+  display: flex;
+  height:50px;
+  margin-bottom: 1.6rem;
+  color: rgba(30, 35, 56, 1);
+}
+
+.container_price .price{
+  font: normal 700 2rem "Open Sans";
+  color: rgba(30, 35, 56, 1);
+  padding-bottom: 1rem;
+}
+.container_price .price_small {
+  color: rgba(30, 35, 56, 1);
+  font: normal 700 1rem "Open Sans";
+}
+
+.container_price a{
+  display: flex;
+  align-items: center;
+  color:rgba(130, 135, 153, 1);
+}
+
+.container_card h4{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(238, 238, 238, 1);
+}
+
+ul{
+  display: flex;
+  flex-direction:column;
+  gap: 1rem;
+  height:190px;
+  padding: 1.5rem 1.5rem 1.5rem 0rem;
+
+  font: normal 400 14px "Open Sans";
+  color: rgba(130, 135, 153, 1);
+}
+
+li{
+  display:flex;
+  align-content: center;
+  gap: 0.5rem;
+}
+
+button{
+  /* reset appearance*/
+  background: transparent;
+}
+
+.btn-primary{
+  padding: 12px 24px 14px 24px;
+  border: 3px solid #1D539E;
+  border-radius:10px;
+
+  Color: #1d539e;
+  font: normal 600 18px "Open Sans";
+}
+
+/*-------------------- Cards free ---------------------*/
+.container_free_card{
+  display: flex;
+  flex-direction: column;
+  padding:1.9rem;
+  justify-content: space-between;
+}
+
+/*------------------- Cards Basic ---------------------*/
+.header_card{
+  display: flex;
+  background: var(--yellow);
+  height:75px;
+  border-radius:8px 8px 0px 0px;
+  align-items: center;
+  padding: 1.9rem;
+  justify-content: space-between;
+
+}
+.button_container{
+  background: #1D539E;
+  Color: white;
+  font: normal 600 12px "Open Sans";
+  padding:8px 24px 8px 24px;
+  border-radius:50px;
+}
+.container_basic_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container_basic_card .container_price{
+  padding:1.90rem;
+}
+
+.container_basic_card ul{
+  padding:20px 0 1rem 1.9rem;
+}
+
+.container_basic_card h4{
+  padding:0 0 1rem 1.9rem;
+}
+
+.btn-basic{
+  padding: 12px 24px 14px 24px;
+  background: #1D539E;
+  border-radius:10px;
+
+  Color: white;
+  font: normal 600 18px "Open Sans";
+
+  margin: 1.9rem;
+}
+
+/*----------------- Cards profissional ----------------*/
+.container_profissional_card{
+  display: flex;
+  flex-direction: column;
+  padding:1.9rem;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:1000px){
+  .container_header_text{
+    width: 350px;
+  }
+
+ main{
+   flex-direction: column;
+   align-items: center;
+ }
+  
+}
